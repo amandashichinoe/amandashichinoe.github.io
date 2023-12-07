@@ -10133,3 +10133,48 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/*CUSTOM Styles*/
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-card h3 {
+  color: #333;
+  margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.project-card p {
+  color: #666;
+  margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+}
+
+.project-card a {
+  display: block;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#project-cards.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
