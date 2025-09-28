@@ -156,7 +156,7 @@ body {
 }
 
 .btn.small:hover {
-  background: var(--accent);
+  background: var(--accent-2);
   color: var(--panel);
 }
 
