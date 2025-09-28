@@ -1,95 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Amanda Shichinoe</title>
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <title>Amanda Shichinoe - Software Developer</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Amanda Shichinoe</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpeg" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projetos">Projetos</a></li>
-                </ul>
+        <header class="header">
+            <div class="container nav-container">
+                <img src="assets/logo.png" class="logo" alt="Logo" />
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#newsletter">Artigos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>  
+                </nav>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Amanda
-                        <span class="text-primary">Shichinoe</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Sorocaba - SP  · Brasil ·
-                        <a href="mailto:name@email.com">amandashichinoe@gmail.com</a>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section id="about" class="hero container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="name">Amanda Shichinoe</h1>
+                        <h2 class="role">Software Engineer</h2>
+                        <p class="stack">Python · Splunk · JavaScript · Docker</p>
+                        <p class="bio">Engenheira de software com mais de 4 anos de experiência. Atualmente atuando em equipe global,
+                            desenvolvendo automações e soluções de observabilidade orientadas a dados.
+                        </p>
                     </div>
-                    <p class="lead mb-5">Atualmente me especializando em Data Science and Analytics, possuo experiência com desenvolvimento de software, desenvolvimento de testes automatizados com Selenium e desenvolvimento de automações RPA utilizando UiPath.<br><br>
-                    Trabalho em um time de desenvolvimento de ferramentas de observabilidade, utilizando principalmente Python, JavaScript/jQuery, Splunk, HTML, CSS e ferramentas de versionamento de código Git/GitLab.<br><br>
-                    Possuo conhecimentos em Excel, SQL, PowerBI, Python e Machine Learning.<br><br>
-                    Também sou voluntária na comunidade Mulheres em Dados, atuando principalmente na frente Python, onde contribuo na disseminação do conhecimento em Python na área de dados.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/amandashichinoe/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/amandashichinoe"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://medium.com/@amandashichinoe"><i class="fab fa-medium"></i></a>
-                        <a class="social-icon" href="https://dev.to/amandashichinoe"><i class="fab fa-dev"></i></a>
+                    <img class="hero-photo" src="https://avatars.githubusercontent.com/u/62769168" alt="Amanda Shichinoe"/>
+                </div>
+            </section>
+
+
+            <!-- <div class="tech-stack">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <img id="splunk-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/splunk/splunk-original-wordmark.svg" alt="Splunk">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI">
+            </div> -->
+
+            <!-- Projects -->
+            <section id="projects" class="section container">
+                <h2 class="section-title">Projetos</h2>
+                <div class="card-grid">
+                    <div class="project-card">
+                        <h3>Expenses Tracker CLI</h3>
+                        <p class="meta">Python · CLI</p>
+                        <a href="https://github.com/amandashichinoe/expenses-tracker-cli" class="btn small outline" target="_blank" rel="noopener">Ver no GitHub</a>
                     </div>
                 </div>
             </section>
 
-            <hr class="m-0" />
-            <!-- Projetos-->
-            <section class="resume-section" id="projetos">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projetos</h2>
-                    <div class="subheading mb-3"></div>
-                    <div id="project-cards" class="project-grid">
-                        <div class="project-card">
-                            <h3>Análises Exploratórias</h3>
-                            <p>Análises exploratórias de diversos datasets</p>
-                            <a href="https://github.com/amandashichinoe/exploratory_data_analysis">Ver no GitHub</a>
-                        </div>
-                        <div class="project-card">
-                            <h3>Certificação em Dados - Laboratoria</h3>
-                            <p>Projetos desenvolvidos durante a jornada da Certificação em Análise de Dados da Laboratoria em parceria com a IBM</p>
-                            <a href="https://github.com/amandashichinoe/certificacao-laboratoria">Ver no GitHub</a>
-                        </div>
-                        <!-- <div class="project-card">
-                            <h3>Nome do Projeto</h3>
-                            <p>Descrição do Projeto.</p>
-                            <a href="link-para-o-projeto-no-github">Ver no GitHub</a>
-                        </div>
-                        <div class="project-card">
-                            <h3>Nome do Projeto</h3>
-                            <p>Descrição do Projeto.</p>
-                            <a href="link-para-o-projeto-no-github">Ver no GitHub</a>
-                        </div> -->
+            <!-- Newsletter -->
+            <section id="articles" class="section container">
+                <h2 class="section-title">Newsletter</h2>
+                <div class="card-grid">
+                    <div class="article-card">
+                        <h3>Como otimizar suas searches no Splunk</h3>
+                        <p class="meta">Splunk · Performance</p>
+                        <a href="https://amandashichinoe.substack.com/p/como-otimizar-suas-searches-no-splunk" class="btn small outline" target="_blank" rel="noopener">Ler</a>
+                    </div>
+                    <div class="article-card">
+                        <h3>Descomplicando o Splunk: Arquitetura e Componentes Essenciais</h3>
+                        <p class="meta">Splunk · Componentes · Arquitetura</p>
+                        <a href="https://amandashichinoe.substack.com/p/introducao-ao-splunk-componentes" class="btn small outline" target="_blank" rel="noopener">Ler</a>
                     </div>
                 </div>
             </section>
-        
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/script.js"></script>
+
+            <!-- Certificates -->
+            <section id="certificates" class="section container">
+
+                <h2 class="section-title">Certificados</h2>
+                <div class="cert-grid">
+                    <div class="badge-card">
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ed378d56-119c-4622-bc22-732a8fdda11b" data-share-badge-host="https://www.credly.com"></div>
+                        <p>Splunk Core Certified User</p>
+                    </div>
+                </div>
+            </section>
+            <script async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+
+            <!-- Contact -->
+            <section id="contact" class="section container">
+                <div class="container">
+                    <h2 class="section-title">Contato</h2>
+                    <div class="contact-icons">
+                        <a href="https://github.com/amandashichinoe" target="_blank" rel="noopener">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon-img"/>
+                        </a>
+                        <a href="https://linkedin.com/in/amandashichinoe" target="_blank" rel="noopener">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn" class="icon-img"/>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <small>© <span id="year"></span> Amanda Shichinoe — Software Engineer</small>
+            </div>
+        </footer>
+
+        <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
     </body>
 </html>
